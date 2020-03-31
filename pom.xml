@@ -11,6 +11,7 @@
     <modules>
         <module>maven-no-archetype</module>
         <module>maven-archetype-quickstart</module>
+        <module>account-email</module>
     </modules>
 
 </project>
