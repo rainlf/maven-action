@@ -14,6 +14,7 @@
     <modules>
         <module>maven-no-archetype</module>
         <module>maven-archetype-quickstart</module>
+        <module>maven-archetype-webapp</module>
         <module>account-email</module>
         <module>account-persist</module>
         <module>account-captcha</module>
