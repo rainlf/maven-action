@@ -11,5 +11,14 @@
 
     <artifactId>maven-no-archetype</artifactId>
 
-
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/43205-release-6OJBvm/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/43205-snapshot-x5y8hg/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
