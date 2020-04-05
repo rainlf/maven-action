@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="accountEmailService" class="com.rainlf.AccountEmailServiceImpl"/>
+    <bean id="accountPersistService" class="com.rainlf.AccountPersistServiceImpl"/>
+    <bean id="accountCaptchaService" class="com.rainlf.AccountCaptchaServiceImpl"/>
+
+    <bean id="accountService" class="com.rainlf.AccountServiceImpl">
+        <property name="accountEmailService" ref="accountEmailService"/>
+        <property name="accountPersistService" ref="accountPersistService"/>
+        <property name="accountCaptchaService" ref="accountCaptchaService"/>
+    </bean>
+</beans>
