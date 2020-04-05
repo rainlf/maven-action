@@ -7,7 +7,7 @@
         <property name="location" value="classpath:service.properties"/>
     </bean>
 
-    <bean id="accountPersistService" class="com.rainlf.AccountPersistServiceImpl">
+    <bean id="accountPersistService" class="com.rainlf.account.persist.AccountPersistServiceImpl">
         <property name="file" value="${persist.file}"/>
     </bean>
 </beans>

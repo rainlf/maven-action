@@ -3,11 +3,11 @@
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="accountEmailService" class="com.rainlf.AccountEmailServiceImpl"/>
-    <bean id="accountPersistService" class="com.rainlf.AccountPersistServiceImpl"/>
-    <bean id="accountCaptchaService" class="com.rainlf.AccountCaptchaServiceImpl"/>
+    <bean id="accountEmailService" class="com.rainlf.account.email.AccountEmailServiceImpl"/>
+    <bean id="accountPersistService" class="com.rainlf.account.persist.AccountPersistServiceImpl"/>
+    <bean id="accountCaptchaService" class="com.rainlf.account.captcha.AccountCaptchaServiceImpl"/>
 
-    <bean id="accountService" class="com.rainlf.AccountServiceImpl">
+    <bean id="accountService" class="com.rainlf.account.service.AccountServiceImpl">
         <property name="accountEmailService" ref="accountEmailService"/>
         <property name="accountPersistService" ref="accountPersistService"/>
         <property name="accountCaptchaService" ref="accountCaptchaService"/>
